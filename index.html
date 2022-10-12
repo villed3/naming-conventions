@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Naming conventions</title>
+	<link rel="stylesheet" href="http://cdn.wildgo.at/villed3/wild-css/dist/wild.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/base16/equilibrium-gray-light.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+	<style>
+		:root {
+			/* --bg-primary: #F05033; */
+			/* --bg-primary-lighter: #fa664c; */
+			--bg-gray: #D9D7CF;
+			--bg-gray-lighter: #f3f1eb;
+			--bg-gray-darker: #7c7c78;
+			--color-black: #302708;
+			/* --color-primary: #dd4a30; */
+			--footer-height: 6rem;
+		}
+
+		body i {
+			vertical-align: middle;
+			font-size: 2.4rem;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<h2 class="no-margin">Naming conventions</h2>
+				<small>by <a target="_blank" href="https://github.com/villed3">villed3</a></small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-6-m no-margin-bottom">
+				<div class="row vertical">
+					<div class="col bg-gray radius">
+						<h5 class="bold bolder">
+							<i class="devicon-rust-plain"></i>
+							Rust
+						</h5>
+						<table>
+							<tbody>
+								<tr>
+									<th>Functions, methods, local variables</th>
+									<td><code>snake_case</code></td>
+								</tr>
+								<tr>
+									<th>Macros</th>
+									<td><code>snake_case!</code></td>
+								</tr>
+								<tr>
+									<th>Types, traits, enum variants</th>
+									<td><code>PascalCase</code></td>
+								</tr>
+								<tr>
+									<th>Static, constants</th>
+									<td><code>SCREAMING_SNAKE_CASE</code></td>
+								</tr>
+								<tr>
+									<th>General constructors</th>
+									<td><code>new</code>or<code>with_more_details</code></td>
+								</tr>
+								<tr>
+									<th>Conversion constructors</th>
+									<td><code>from_some_other_type</code></td>
+								</tr>
+								<tr>
+									<th>Type parameters</th>
+									<td>Concise <code>PascalCase</code>, or:<code>T</code></td>
+								</tr>
+								<tr>
+									<th>Lifetimes</th>
+									<td>Short <code>lowercase</code></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="spacer-s"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-6-m no-margin-bottom">
+				<div class="row vertical">
+					<div class="col bg-gray-dark radius">
+						<h5 class="bold bolder">
+							<i class="devicon-elixir-plain"></i>
+							Elixir
+						</h5>
+						<table>
+							<tbody>
+								<tr>
+									<th>Functions, variables, module attributes</th>
+									<td><code>snake_case</code></td>
+								</tr>
+								<tr>
+									<th>Atoms</th>
+									<td><code>:snake_case</code></td>
+								</tr>
+								<tr>
+									<th>Function/macro with exception</th>
+									<td><code>snake_case!</code></td>
+								</tr>
+								<tr>
+									<th>Function returning boolean</th>
+									<td><code>snake_case?</code></td>
+								</tr>
+								<tr>
+									<th>Aliases (modules)</th>
+									<td><code>CamelCase</code></td>
+								</tr>
+								<tr>
+									<th>Unused values</th>
+									<td>Begin with<code>_</code></td>
+								</tr>
+								<tr>
+									<th>Type checking functions</th>
+									<td>Begin with <code>is_</code></td>
+								</tr>
+								<tr>
+									<th>O(1) length measuring functions</th>
+									<td>End with <code>_size</code></td>
+								</tr>
+								<tr>
+									<th>O(n) length measuring functions</th>
+									<td>End with <code>_length</code></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="spacer-s"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="spacer-s"></div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					© 2022 <a href="https://github.com/villed3" target="_blank">villed3</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<script>
+		// document.querySelectorAll('code').forEach((block) => {
+		// 	hljs.highlightBlock(block);
+		// })
+	</script>
+</body>
+
+</html>
