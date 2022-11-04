@@ -29,12 +29,12 @@
 		td, th {
 			line-height: 3rem;
 		}
-		th {
-			text-align: left;
-		}
 		td {
 			text-align: right;
-			max-width: 30%;
+		}
+		details summary {
+			margin: 0;
+			padding: 1rem 0;
 		}
 	</style>
 </head>
@@ -45,16 +45,19 @@
 			<div class="col text-center">
 				<h2 class="no-margin">Naming conventions</h2>
 				<small>by <a target="_blank" href="https://github.com/villed3">villed3</a></small>
+				<p>Click on a module to show its content. </p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-12 col-6-m no-margin-bottom">
 				<div class="row vertical">
-					<div class="col bg-gray radius">
-						<h5 class="bold bolder">
-							<i class="devicon-rust-plain"></i>
-							Rust
-						</h5>
+					<details class="col bg-gray radius">
+						<summary>
+							<h5 class="bold bolder">
+								<i class="devicon-rust-plain"></i>
+								Rust
+							</h5>
+						</summary>						
 						<table>
 							<tbody>
 								<tr>
@@ -92,12 +95,14 @@
 							</tbody>
 						</table>
 						<div class="spacer-s"></div>
-					</div>
-					<div class="col bg-gray-dark radius">
-						<h5 class="bold bolder">
-							<i class="devicon-python-plain"></i>
-							Python
-						</h5>
+					</details>
+					<details class="col bg-gray-dark radius">
+						<summary>
+							<h5 class="bold bolder">
+								<i class="devicon-python-plain"></i>
+								Python
+							</h5>
+						</summary>						
 						<table>
 							<tbody>
 								<tr>
@@ -123,12 +128,14 @@
 							</tbody>
 						</table>
 						<div class="spacer-s"></div>
-					</div>
-					<div class="col bg-gray radius">
-						<h5 class="bold bolder">
-							<i class="devicon-git-plain"></i>
-							Git
-						</h5>
+					</details>
+					<details class="col bg-gray radius">
+						<summary>
+							<h5 class="bold bolder">
+								<i class="devicon-git-plain"></i>
+								Git
+							</h5>
+						</summary>
 						<table>
 							<tbody>
 								<tr>
@@ -146,16 +153,18 @@
 							</tbody>
 						</table>
 						<div class="spacer-s"></div>
-					</div>
+					</details>
 				</div>
 			</div>
 			<div class="col-12 col-6-m no-margin-bottom">
 				<div class="row vertical">
-					<div class="col bg-gray-dark radius">
-						<h5 class="bold bolder">
-							<i class="devicon-elixir-plain"></i>
-							Elixir
-						</h5>
+					<details class="col bg-gray-dark radius">
+						<summary>
+							<h5 class="bold bolder">
+								<i class="devicon-elixir-plain"></i>
+								Elixir
+							</h5>
+						</summary>
 						<table>
 							<tbody>
 								<tr>
@@ -197,12 +206,14 @@
 							</tbody>
 						</table>
 						<div class="spacer-s"></div>
-					</div>
-					<div class="col bg-gray radius">
-						<h5 class="bold bolder">
-							<i class="devicon-javascript-plain"></i>
-							JavaScript
-						</h5>
+					</details>
+					<details class="col bg-gray radius">
+						<summary>
+							<h5 class="bold bolder">
+								<i class="devicon-javascript-plain"></i>
+								JavaScript
+							</h5>
+						</summary>
 						<table>
 							<tbody>
 								<tr>
@@ -232,7 +243,7 @@
 							</tbody>
 						</table>
 						<div class="spacer-s"></div>
-					</div>
+					</details>
 				</div>
 			</div>
 		</div>
