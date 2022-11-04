@@ -26,12 +26,16 @@
 			vertical-align: middle;
 			font-size: 2.4rem;
 		}
-		td, th {
+
+		td,
+		th {
 			line-height: 3rem;
 		}
+
 		td {
 			text-align: right;
 		}
+
 		details summary {
 			margin: 0;
 			padding: 1rem 0;
@@ -51,13 +55,13 @@
 		<div class="row">
 			<div class="col-12 col-6-m no-margin-bottom">
 				<div class="row vertical">
-					<details class="col bg-gray radius">
+					<details class="col bg-gray radius" id="rust">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-rust-plain"></i>
 								Rust
 							</h5>
-						</summary>						
+						</summary>
 						<table>
 							<tbody>
 								<tr>
@@ -96,13 +100,13 @@
 						</table>
 						<div class="spacer-s"></div>
 					</details>
-					<details class="col bg-gray-dark radius">
+					<details class="col bg-gray-dark radius" id="python">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-python-plain"></i>
 								Python
 							</h5>
-						</summary>						
+						</summary>
 						<table>
 							<tbody>
 								<tr>
@@ -129,7 +133,7 @@
 						</table>
 						<div class="spacer-s"></div>
 					</details>
-					<details class="col bg-gray radius">
+					<details class="col bg-gray radius" id="git">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-git-plain"></i>
@@ -144,7 +148,8 @@
 								</tr>
 								<tr>
 									<th>Branches</th>
-									<td><code>author_feature</code> or <code>author_module_feature</code> where each section is in <code>kebab-case</code></td>
+									<td><code>author_feature</code> or <code>author_module_feature</code> where each
+										section is in <code>kebab-case</code></td>
 								</tr>
 								<tr>
 									<th>Default branch name</th>
@@ -158,7 +163,7 @@
 			</div>
 			<div class="col-12 col-6-m no-margin-bottom">
 				<div class="row vertical">
-					<details class="col bg-gray-dark radius">
+					<details class="col bg-gray-dark radius" id="elixir">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-elixir-plain"></i>
@@ -207,7 +212,7 @@
 						</table>
 						<div class="spacer-s"></div>
 					</details>
-					<details class="col bg-gray radius">
+					<details class="col bg-gray radius" id="javascript">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-javascript-plain"></i>
@@ -264,6 +269,13 @@
 		// document.querySelectorAll('code').forEach((block) => {
 		// 	hljs.highlightBlock(block);
 		// })
+	</script>
+	<script>
+		const hash = window.location.hash;
+		if (hash) {
+			const el = document.getElementById(hash.substring(1));
+			if (el) el.open = true;
+		}
 	</script>
 </body>
 
