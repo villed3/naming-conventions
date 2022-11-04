@@ -40,6 +40,15 @@
 			margin: 0;
 			padding: 1rem 0;
 		}
+
+		details:nth-child(even) {
+			background-color: var(--bg-gray-darker);
+			color: var(--color-white);
+		}
+
+		details:nth-child(odd) {
+			background-color: var(--bg-gray);
+		}
 	</style>
 </head>
 
@@ -52,10 +61,10 @@
 				<p>Click on a module to show its content. </p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-12 col-6-m no-margin-bottom">
+		<div class="row justify-center">
+			<div class="col-12-s col-6 no-margin-bottom">
 				<div class="row vertical">
-					<details class="col bg-gray radius" id="rust">
+					<details class="col radius" id="rust">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-rust-plain"></i>
@@ -100,7 +109,7 @@
 						</table>
 						<div class="spacer-s"></div>
 					</details>
-					<details class="col bg-gray-dark radius" id="python">
+					<details class="col radius" id="python">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-python-plain"></i>
@@ -133,7 +142,7 @@
 						</table>
 						<div class="spacer-s"></div>
 					</details>
-					<details class="col bg-gray radius" id="git">
+					<details class="col radius" id="git">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-git-plain"></i>
@@ -159,11 +168,7 @@
 						</table>
 						<div class="spacer-s"></div>
 					</details>
-				</div>
-			</div>
-			<div class="col-12 col-6-m no-margin-bottom">
-				<div class="row vertical">
-					<details class="col bg-gray-dark radius" id="elixir">
+					<details class="col radius" id="elixir">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-elixir-plain"></i>
@@ -212,7 +217,7 @@
 						</table>
 						<div class="spacer-s"></div>
 					</details>
-					<details class="col bg-gray radius" id="javascript">
+					<details class="col radius" id="javascript">
 						<summary>
 							<h5 class="bold bolder">
 								<i class="devicon-javascript-plain"></i>
@@ -263,13 +268,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-	<script>hljs.highlightAll();</script>
-	<script>
-		// document.querySelectorAll('code').forEach((block) => {
-		// 	hljs.highlightBlock(block);
-		// })
-	</script>
 	<script>
 		const hash = window.location.hash;
 		if (hash) {
